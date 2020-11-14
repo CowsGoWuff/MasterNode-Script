@@ -6,12 +6,12 @@ CONFIGFOLDER='/root/.acr'
 COIN_DAEMON='acrd'
 COIN_CLI='acr-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/AcreageCoin/acreage.git'
-COIN_TGZ='http://www.mastermasternode.com/acr/acr-lin-daemon.zip'
+COIN_REPO='https://github.com/CowsGoWuff/genesis-x.git'
+COIN_TGZ='http://www.genesisx.network/genesisx-linux.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Acreage'
-COIN_PORT=3771
-RPC_PORT=3782
+COIN_NAME='GenesisX'
+COIN_PORT=5555
+RPC_PORT=19021
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -151,14 +151,15 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #Addnodes
-addnode=45.77.38.21
-addnode=66.42.69.192
-addnode=206.81.18.71
-addnode=149.28.114.83
-addnode=45.32.145.41
-addnode=138.201.95.192
-addnode=104.207.158.116
-addnode=217.69.2.134
+addnode=54.36.175.160:5555
+addnode=93.104.215.203:5555
+addnode=213.136.90.158:5555
+addnode=5.189.163.30:5555
+addnode=173.212.200.30:5555
+addnode=80.254.127.139:5555
+addnode=173.249.17.41:5555
+addnode=192.99.16.198:5555
+addnode=155.138.229.161:5555
 
 
 EOF
